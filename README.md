@@ -4,6 +4,10 @@ Welcome to the responsive homepage for **Kyara Beverages**, a brand specializing
 
 ---
 
+## 🌐 Live Preview
+
+👉 [Click here to view the website](https://shubiks.github.io/Beverage-Website/)
+
 ## 🌐 Project Overview
 
 This webpage introduces the Kyara brand, highlights key products, and allows users to contact the team via a dynamic form. Key sections include:
