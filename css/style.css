@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: white;
+    color: #1f2937; /* Tailwind-like gray-800 */
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('../images/banner.png') center center / cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* Dark semi-transparent layer */
+  z-index: 1;
+}
+.hero-content {
+  background: rgba(255, 255, 255, 0.583);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+  
+.logo-wrapper img{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Give inner space for rectangular logos */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  animation: popIn 1.2s ease-out;
+  overflow: hidden; /* important if image overflows */
+}
+
+
+
+.logo-wrapper img {
+  width: 80%;
+  height: auto;
+  object-fit: contain; 
+}
+
+  
+
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4b5563;
+    animation: fadeIn 1.8s ease-in;
+  }
+  
+  /* Animations */
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

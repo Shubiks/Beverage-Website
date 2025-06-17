@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyara Beverages</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+      <div class="logo-wrapper">
+        <img src="images/logo.png" alt="Kyara Logo" class="logo" />
+      </div>
+      <h1>Refreshment, Reimagined</h1>
+      <p>Crafting millet-based fruit drinks that are both healthy and delicious.</p>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section class="py-12 px-6 md:px-20 text-center bg-white">
+    <h2 class="text-3xl font-bold mb-4">About Kyara</h2>
+    <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+      At Kyara Beverages, we blend the power of tradition and innovation to deliver millet-based drinks that are natural, nutritious, and refreshing. Our mission is to bring health and flavor together in every bottle.
+    </p>
+  </section>
+
+  <!-- Product Teasers -->
+  <section class="py-12 px-6 md:px-20 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Drinks</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <!-- Product 1 -->
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="images/img1.png" alt="Drink 1" class="rounded-md mb-4 w-full h-[300px] object-cover">
+        <h3 class="text-xl font-semibold">Tropical Millet Splash</h3>
+        <p class="text-gray-600">A vibrant mix of millet and tropical fruits.</p>
+      </div>
+      <!-- Product 2 -->
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="images/img2.png" alt="Drink 1" class="rounded-md mb-4 w-full h-[300px] object-cover">
+        <h3 class="text-xl font-semibold">Berry Boost Blend</h3>
+        <p class="text-gray-600">A refreshing berry delight with nutritious grains.</p>
+      </div>
+      <!-- Product 3 -->
+      <div class="bg-white rounded-xl shadow p-4 text-center">
+        <img src="images/img3.png" alt="Drink 1" class="rounded-md mb-4 w-full h-[300px] object-cover">
+        <h3 class="text-xl font-semibold">Citrus Zest Elixir</h3>
+        <p class="text-gray-600">Citrusy millet energy in every sip.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-12 px-6 md:px-20 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400" required>
+      <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400" required>
+      <textarea placeholder="Your Message" rows="4" class="w-full border border-gray-300 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400" required></textarea>
+      <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
